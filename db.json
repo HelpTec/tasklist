@@ -1,22 +1,28 @@
 {
   "tasks": [
     {
-      "id": 2,
+      "id": 1,
       "text": "Entrenar",
-      "day": "Junio 2 a las 13",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Investigar",
-      "day": "Junio 2 a las 12",
+      "day": "10 de junio a las 20:00",
       "reminder": false
     },
     {
-      "id": 4,
-      "text": "Volar",
-      "day": "Abril 30 a las 23:59",
+      "id": 2,
+      "text": "comer",
+      "day": "10 de junio a las 21:00",
       "reminder": true
+    },
+    {
+      "text": "Ir a natacion",
+      "day": "mañana a las 13:00",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Ir a buscar a alma",
+      "day": "mañana a las 13:00",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
