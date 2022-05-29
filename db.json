@@ -23,6 +23,12 @@
       "day": "mañana a las 13:00",
       "reminder": false,
       "id": 4
+    },
+    {
+      "text": "ir a correr",
+      "day": "manana",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

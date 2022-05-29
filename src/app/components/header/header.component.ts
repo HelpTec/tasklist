@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { UiService} from 'src/app/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -6,15 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  showAddTask:boolean = false;
+  Subscription?: Subscription;    
   title:string = 'My Task List';
-
-  constructor() { }
+  
+  constructor(
+    private uiservice:UiService) { 
+      this.Subscription = this.uiservice.onToggle()
+        .subscribe(value => this.showAddTask = value)
+    }
 
   ngOnInit(): void {
   }
 
   toggleAddTask(){
-    console.log("ToggleAddTask!");
+   this.uiservice.toggleAddTask();
   }
 }

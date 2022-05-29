@@ -9,6 +9,7 @@ import {Task} from '../../Task'
 })
 export class TasksComponent implements OnInit {
   tasks: Task[]= [];
+  hide: Boolean = true;
 
   constructor(
     private taskService: TaskService
@@ -36,4 +37,9 @@ export class TasksComponent implements OnInit {
       this.tasks.push(task)
   })
   }
+  ocultar(hide:any){
+    console.log("si, lo recibi")
+
+  }
+ 
 }
